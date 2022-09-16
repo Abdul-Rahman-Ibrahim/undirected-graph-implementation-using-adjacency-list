@@ -34,4 +34,16 @@ while not queue.empty():
             queue.put(v)
 
 print(bfs_traversal_output)
+#shortest distances of all nodes from source node
 print(distance)
+
+#shortest path of source node from any node (v)
+v = "G"
+path = []
+while v is not None:
+    path.append(v)
+    v = parent[v]
+path.reverse()
+print(path)
+    
+
